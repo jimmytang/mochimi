@@ -96,3 +96,9 @@ a.signup_button {
 #footer .navigation {
   float: none;
 }
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+}
