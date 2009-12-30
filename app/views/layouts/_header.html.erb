@@ -1,8 +1,9 @@
 <div id="header" class="round">
-  <%= image_tag("mochi_bunnies_girls_t_shirt-p235759192799421781ye7t_400.jpg", :alt => "Sample App", :class => "round") %>
+	<% logo = image_tag("mochi_bunnies_girls_t_shirt-p235759192799421781ye7t_400.jpg", :alt => "Sample App", :class => "round") %>
+	  <%= link_to logo, root_url %>  
   <ul class="navigation round">
-    <li><%= link_to "Home", '#' %></li>
-    <li><%= link_to "Help", '#' %></li>
+    <li><%= link_to "Home", root_url %></li>
+    <li><%= link_to "Help", help_url %></li>
     <li><%= link_to "Sign in", '#' %></li>
   </ul>
 </div>
