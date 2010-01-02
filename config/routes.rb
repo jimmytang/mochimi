@@ -35,12 +35,15 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+
   
   ActionController::Routing::Routes.draw do |map|
     map.root :controller => 'pages', :action => 'home'
     map.contact '/contact', :controller => 'pages', :action => 'contact'
     map.about   '/about',   :controller => 'pages', :action => 'about'
     map.help    '/help',    :controller => 'pages', :action => 'help'
+    
+    map.survey    '/survey',    :controller => 'pages', :action => 'survey'
     map.signup '/signup',   :controller => 'users', :action => 'new'
   end
   
