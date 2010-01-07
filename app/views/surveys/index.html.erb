@@ -1,0 +1,32 @@
+<h1>Listing surveys</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Facebook</th>
+    <th>Q1</th>
+    <th>Q2</th>
+    <th>Q3</th>
+    <th>Q4</th>
+    <th>Q5</th>
+  </tr>
+
+<% for survey in @surveys %>
+  <tr>
+    <td><%=h survey.username %></td>
+    <td><%=h survey.facebook_id %></td>
+    <td><%=h survey.q1 %></td>
+    <td><%=h survey.q2 %></td>
+    <td><%=h survey.q3 %></td>
+    <td><%=h survey.q4 %></td>
+    <td><%=h survey.q5 %></td>
+    <td><%= link_to 'Show', survey %></td>
+    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+    <td><%= link_to 'Destroy', survey, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New survey', new_survey_path %>

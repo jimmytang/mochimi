@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  username: MyString
+  facebook_id: 
+  q1: 9.99
+  q2: 9.99
+  q3: 9.99
+  q4: 9.99
+  q5: 9.99
+
+two:
+  username: MyString
+  facebook_id: 
+  q1: 9.99
+  q2: 9.99
+  q3: 9.99
+  q4: 9.99
+  q5: 9.99

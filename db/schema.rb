@@ -9,6 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20100106233158) do
+
+  create_table "surveys", :force => true do |t|
+    t.string   "username"
+    t.integer  "facebook_id"
+    t.integer  "q1",          :limit => 10, :precision => 10, :scale => 0
+    t.integer  "q2",          :limit => 10, :precision => 10, :scale => 0
+    t.integer  "q3",          :limit => 10, :precision => 10, :scale => 0
+    t.integer  "q4",          :limit => 10, :precision => 10, :scale => 0
+    t.integer  "q5",          :limit => 10, :precision => 10, :scale => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

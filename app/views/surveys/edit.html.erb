@@ -1,0 +1,43 @@
+<h1>Editing survey</h1>
+
+<% form_for(@survey) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <%= f.label :facebook_id %><br />
+    <%= f.text_field :facebook_id %>
+  </p>
+
+  <p>
+	<p>hello moto? are you gay?</p>
+    <p><%= f.radio_button :q1, 0 %>yes</p>
+    <p><%= f.radio_button :q1, 1 %>no</p>
+  </p>
+  
+  <p>
+    <%= f.label :q2 %><br />
+    <%= f.text_field :q2 %>
+  </p>
+  <p>
+    <%= f.label :q3 %><br />
+    <%= f.text_field :q3 %>
+  </p>
+  <p>
+    <%= f.label :q4 %><br />
+    <%= f.text_field :q4 %>
+  </p>
+  <p>
+    <%= f.label :q5 %><br />
+    <%= f.text_field :q5 %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Submit Questionnaire!', 'submitQuestionnaire' %>

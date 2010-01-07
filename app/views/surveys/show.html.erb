@@ -1,0 +1,38 @@
+<p>
+  <b>Username:</b>
+  <%=h @survey.username %>
+</p>
+
+<p>
+  <b>Facebook:</b>
+  <%=h @survey.facebook_id %>
+</p>
+
+<p>
+  <b>Q1:</b>
+  <%=h @survey.q1 %>
+</p>
+
+<p>
+  <b>Q2:</b>
+  <%=h @survey.q2 %>
+</p>
+
+<p>
+  <b>Q3:</b>
+  <%=h @survey.q3 %>
+</p>
+
+<p>
+  <b>Q4:</b>
+  <%=h @survey.q4 %>
+</p>
+
+<p>
+  <b>Q5:</b>
+  <%=h @survey.q5 %>
+</p>
+
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>
